@@ -16,37 +16,24 @@ public class main {
     private static String type;
 
 
-    public static void main(String[] the_args){
+    public static void main(String[] the_args) {
 
-         HashMap <Integer,HashMap<Integer,Product>> makers = new HashMap <>();
-        HashMap <Integer, Product>  products = new HashMap<>();
+        HashMap<Integer, HashMap<Integer, Product>> makers = new HashMap<>();
+        HashMap<Integer, Product> products = new HashMap<>();
 
         Scanner input = new Scanner(System.in);
 
         upc1 = input.nextInt();
         upc2 = input.nextInt();
-        maker = input.next();
-        name = input.next();
-        type = input.next();
+        maker = input.nextLine();
+        name = input.nextLine();
+        type = input.nextLine();
         bot_size = input.nextDouble();
         weight = input.nextDouble();
-        count = input.nextInt();
-
-        if (!makers.containsKey(upc1)){
-            //create new map for different products
-            Product my_prod = new Product(maker,name, type, bot_size, weight, count);
-            makers.put(upc1, new HashMap<Integer, Product>());
-
-
-
-
-        }
-
-
-
-
-
 
 
     }
+
+
 }
+
