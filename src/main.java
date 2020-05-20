@@ -23,6 +23,7 @@ public class main {
 
         Scanner input = new Scanner(System.in);
 
+//just a comment to commit
         upc1 = input.nextInt();
         upc2 = input.nextInt();
         maker = input.nextLine();
